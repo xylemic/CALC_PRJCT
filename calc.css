@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nova Square', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  /* height: 500px; */
+  width: 350px;
+  background-color: gray;
+  color: black;
+  margin: 4rem auto;
+  border-radius: 20px;
+  padding: 1px;
+}
+
+#output {
+  text-align: right;
+  padding: 15px 8px;
+  font-size: calc(2.8em - 0.5vw);
+  font-family: 'Nova Square', sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  background: #aaa;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin: 20px auto;
+  border: none;
+  outline: none;
+}
+
+.calc-btn-table {
+  width: 90%;
+  margin: 0 auto;
+  border-spacing: 6px;
+}
+
+.calc-btn-table td {
+  text-align: center;
+  padding: 10px;
+}
+
+.calc-button {
+  background-color: #d8d9db;
+  color: black;
+  font-family: 'Nova Square', sans-serif;
+  border: none;
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.calc-button:hover {
+  background-color: #ebebeb;
+}
+
+#equalsButton {
+  background-color: #f38208;
+}
+
+#equalsButton:hover {
+  background: #d79147;
+}
