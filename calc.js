@@ -4,10 +4,14 @@
 let currentNumber = "";
 let previousNumber = null;
 let operation = null;
+let expression = '';
 
 function handleNumber(number) {
     currentNumber += number;
-    document.getElementById("output").value = currentNumber;
+    console.log(`this is the current number: ${currentNumber}`);
+    expression += number;
+    document.getElementById("output").value = expression;
+    // document.getElementById("output").value = currentNumber;
 }
 
 function handleOperation(op) {
@@ -15,6 +19,8 @@ function handleOperation(op) {
     previousNumber = parseFloat(currentNumber);
     currentNumber = "";
     operation = op;
+    expression += op;
+    document.getElementById("output").value = expression;
 }
 
 function calculate() {
