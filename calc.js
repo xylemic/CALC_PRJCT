@@ -15,10 +15,11 @@ function handleNumber(number) {
 
 function handleOperation(op) {
     if (currentNumber === "") return;
-    expression = op;
+    expression += currentNumber;
     previousNumber = parseFloat(currentNumber);
     currentNumber = "";
     operation = op;
+    expression += op;
     document.getElementById("output").value = expression;
     
 }
