@@ -15,7 +15,7 @@ function handleOperation(op) {
     previousNumber = parseFloat(currentNumber);
     currentNumber = "";
     operation = op;
-    document.getElementById("output").value = operation;
+    document.getElementById("output").value;
 }
 
 function calculate() {
