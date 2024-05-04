@@ -4,6 +4,13 @@
 let currentNumber = "";
 let previousNumber = null;
 let operation = null;
+let expression= "";
+
+function dispExpression(value) {
+    expression += value;
+    document.getElementById("output").textContent = expression;
+
+}
 
 function handleNumber(number) {
     currentNumber += number;
