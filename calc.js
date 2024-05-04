@@ -16,8 +16,10 @@ function handleNumber(number) {
 
 function handleOperation(op) {
     if (currentNumber === "") return;
-    previousNumber = parseFloat(currentNumber);
-    currentNumber = "";
+    if (previousNumber !== null) {
+        expression += currentNumber;
+        currentNumber = "";
+    }
     operation = op;
     expression += op;
     document.getElementById("output").value = expression;
